@@ -96,7 +96,7 @@ var nameLength:  Int = name ?.length ?: -1
 var companyLength:  Int = company ?.length ?:  -1  
 ```
 
-__Kotlin Operators__
+# Kotlin Operators
 
 __Kotlin if Expression__
 
