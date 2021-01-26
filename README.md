@@ -39,3 +39,16 @@ val age: Int = 10
 ```
 - var (Mutable variable) -> We can change the value of variable declared using var keyword later in the program.
 - val (Immutable variable) -> We cannot change the value of variable which is declared using val keyword.
+
+# Null Safety
+
+- Kotlin's type system is aimed at eliminating the danger of null references from code.
+- Types -> Nullable Types and Non-Nullable Types
+
+__Nullable Types__
+
+- Nullable types are declared by putting a ? behind the String
+
+```ruby
+
+```
