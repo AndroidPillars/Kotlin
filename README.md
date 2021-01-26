@@ -82,4 +82,15 @@ studentA?.courseName?.instructor?.name
 - The basic difference between the Safe call and Null check is that we use Null checks (!!) only when we are confident that the property can’t have a null value. 
 - If we are not sure that the value of the property is null or not then we prefer to use Safe calls(?.).
 
+__Elvis Operator (?:)__
+
+- Elvis operator (?:) is used to return the not null value even the conditional expression is null. 
+- It is also used to check the null safety of values.
+
+```ruby
+var name: String? = null  
+var company: String? = "May be declare nullable string"  
+var nameLength:  Int = name ?.length ?: -1  
+var companyLength:  Int = company ?.length ?:  -1  
+```
 
