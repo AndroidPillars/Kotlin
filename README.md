@@ -96,3 +96,19 @@ var nameLength:  Int = name ?.length ?: -1
 var companyLength:  Int = company ?.length ?:  -1  
 ```
 
+__Kotlin Operators__
+
+__Kotlin if Expression__
+
+- In Kotlin, if is an expression is which returns a value.
+
+```ruby
+ val num1 = 10  
+ val num2 =20  
+ val result = if (num1 > num2) {  
+      "$num1 is greater than $num2"  
+ } else {  
+      "$num1 is smaller than $num2"  
+ }  
+ println(result)  
+```
