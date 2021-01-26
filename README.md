@@ -112,3 +112,23 @@ __Kotlin if Expression__
  }  
  println(result)  
 ```
+
+__Kotlin when Expression__
+
+- Kotlin, when expression is a conditional expression which returns the value and it is the replacement of switch statement.
+
+```ruby
+var number = 4
+when(number) {
+    1 -> println("One")
+    2 -> {
+        println("Two")
+        println("Two-Two")
+    }
+    4, 8, 9 -> println("Three")
+    in 1..5 -> println("Four")
+    5 + 6 -> println("Five")
+    !in 1..5 -> println("Five")
+    else -> println("invalid number")
+} 
+```
