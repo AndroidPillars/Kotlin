@@ -79,6 +79,8 @@ __Safe call (?.)__
 studentA?.courseName?.instructor?.name 
 ```
 
+__Safe call (?.) vs Null checks(!!)__
+
 - The basic difference between the Safe call and Null check is that we use Null checks (!!) only when we are confident that the property can’t have a null value. 
 - If we are not sure that the value of the property is null or not then we prefer to use Safe calls(?.).
 
