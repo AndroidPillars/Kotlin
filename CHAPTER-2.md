@@ -164,6 +164,55 @@ fun isEven(i: Int) = i % 2 == 0
 
 fun Int.even() = this % 2 == 0
 ```
+# FlatMap vs Map in Kotlin
+
+__Map__
+
+- It basically means that we can modify the list according to our requirements. 
+
+```ruby
+fun main(args: Array<String>) {
+
+    var list = (1..100).toList()
+
+    //var doubled = list.map { element -> element * 2 }
+    var doubled = list.map { it * 2 }
+
+    print(doubled)
+
+    val average = list.average()
+    val shifted = list.map { it - average }
+
+    print(shifted)
+}
+```
+
+__FlatMap__
+
+- FlatMap is used to combine two different collections and returns as a single collection.
+
+```ruby
+fun main(args: Array<String>) {
+
+    var nestedList = listOf(
+        (1..10).toList(),
+        (11..20).toList(),
+        (21..30).toList()
+    )
+
+    val notFlattened = nestedList.map { it.sortedDescending() }
+
+    print(notFlattened)
+
+    val convertFlattened = nestedList.map { it.sortedDescending() }.flatten()
+
+    print(convertFlattened)
+
+    val flattened = nestedList.flatMap { it.sortedDescending() }
+
+    print(flattened)
+}
+```
 
 # Exception Handling
 
