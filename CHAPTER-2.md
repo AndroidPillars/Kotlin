@@ -79,6 +79,49 @@ fun run(num:Int= 5, mText: Char ='x'){
 } 
 ```
 
+# Kotlin Lambdas
+
+- Lambdas Expressions are essentially anonymous functions that we can treat as values.
+- Lambda is a function which has no name. 
+- Lambda is defined with a curly braces {} which takes variable as a parameter (if any) and body of function. 
+- The body of function is written after variable (if any) followed by -> operator.
+
+__syntax__
+```ruby
+{ variable -> body_of_function}  
+```
+
+__Normal Function__
+```ruby
+fun main(args: Array<String>){  
+    addNumber(15,10)  
+}  
+fun addNumber(a: Int, b: Int){  
+    val add = a + b  
+    println(add)  
+} 
+```
+
+__Using Lambdas__
+
+```ruby
+val greeting = { println("Hello World!")}
+
+    greeting()
+```
+
+```ruby
+val multiply =  { x: Int -> x * 2 }
+   val result =  multiply(4)
+    print(result)
+```
+```ruby
+val product = { a: Int, b: Int -> a * b }
+   val result = product(9, 3)
+    println(result)
+```
+
+
 # Exception Handling
 
 - The Exception Handling in Java is one of the powerful technique to handle the runtime errors so that normal flow of the application can be maintained.
