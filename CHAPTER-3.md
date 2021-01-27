@@ -25,6 +25,8 @@ fun main(args: Array<String>) {
 }
 ```
 
+# Properties with Getters and Setters
+
 ```ruby
 class Microphone {
 
