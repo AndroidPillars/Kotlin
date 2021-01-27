@@ -214,6 +214,41 @@ fun main(args: Array<String>) {
 }
 ```
 
+# take() and drop()
+
+- take() is going to take the first n elements of a list and only going to return those and drop() is going to take the first n elements of a list and is going to return then the rest of the collection.
+
+```ruby
+fun main(args: Array<String>) {
+
+    val list = (1..1000).toList()
+
+    val first10 = list.take(10)
+    print(first10)
+
+    val withOutFirst900 = list.dropLast(900)
+    print(withOutFirst900)
+
+    
+}
+```
+
+```ruby
+fun main(args: Array<String>) {
+
+    val list = generateSequence(0){
+        println("Calculating: ${ it + 10 }")
+        it + 10 }
+
+    val first10 = list.take(10).toList()
+    println(first10)
+
+    val first20 = list.take(20).toList()
+    println(first20)
+    
+}
+```
+
 # Exception Handling
 
 - The Exception Handling in Java is one of the powerful technique to handle the runtime errors so that normal flow of the application can be maintained.
