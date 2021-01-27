@@ -81,9 +81,28 @@ fun run(num:Int= 5, mText: Char ='x'){
 
 # Exception Handling
 
-- Exception handling is a technique which handles the runtime problems and maintains the flow of program execution.
+- The Exception Handling in Java is one of the powerful technique to handle the runtime errors so that normal flow of the application can be maintained.
+- In other words, Exception Handling is a mechanism to handle runtime errors such as ClassNotFoundException, IOException, SQLException, RemoteException, etc.
 - In Kotlin, all exception classes are descendants of class Throwable.
-- Types -> try, catch, finally and throw
+- four keyword Types -> try, catch, finally and throw
+- Types -> Checked Exception, Unchecked Exception and Errors
+
+__Checked Exception__
+
+- Checked exception is checked at compile time. 
+- This exception type extends the Throwable class.
+- Example: IOException, SQLException etc
+
+__Unchecked Exception__
+
+- The classes which inherit RuntimeException are known as unchecked exceptions.
+- Unchecked exceptions are not checked at compile-time, but they are checked at runtime.
+- Example:  ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException etc.
+
+__Error__
+
+- Error is irrecoverable.
+- Example: OutOfMemoryError, VirtualMachineError, AssertionError etc.
 
 ```ruby
 throw MyException("this throws an exception")  
