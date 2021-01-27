@@ -27,6 +27,8 @@ fun main(args: Array<String>) {
 
 # Properties with Getters and Setters
 
+__Example 1__
+
 ```ruby
 class Microphone {
 
@@ -46,6 +48,7 @@ fun main(args: Array<String>) {
 
 }
 ```
+__Example 2__
 
 ```ruby
 class Microphone {
