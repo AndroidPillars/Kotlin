@@ -121,6 +121,13 @@ val product = { a: Int, b: Int -> a * b }
     println(result)
 ```
 
+```ruby
+val add: (Int, Int) -> Int = {
+        x : Int, y : Int -> x + y
+    }
+    val result =  add(4, 5)
+    print(result)
+```
 
 # Exception Handling
 
