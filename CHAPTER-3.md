@@ -76,3 +76,58 @@ fun main(args: Array<String>) {
 
 }
 ```
+
+# Primary and Secondary Constructors
+
+__Example 1__
+
+```ruby
+class Microphone(mName: String, mModelNo: Int) {
+
+    var name: String
+    var modelNo: Int
+    
+    init {
+        name = mName
+        modelNo = mModelNo
+    }
+
+}
+```
+
+- init keyword is executed whenever a new object of the class is created.
+
+```ruby
+class Microphone(mName: String, mModelNo: Int) {
+
+    var name: String = mName
+    var modelNo: Int = mModelNo
+
+}
+```
+
+__Final Code__
+
+```ruby
+class Microphone(val name: String, val modelNo: Int) {
+
+    constructor(name: String) :this(name, 0){
+
+    }
+
+}
+
+fun main(args: Array<String>) {
+
+    val mMicrophone = Microphone("Android", 123456)
+
+    print(mMicrophone.name)
+    print(mMicrophone.modelNo)
+
+    val mAlteredMicrophone = Microphone("Flutter")
+
+    print(mAlteredMicrophone.name)
+    print(mAlteredMicrophone.modelNo)
+
+}
+```
