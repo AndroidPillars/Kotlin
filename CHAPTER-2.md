@@ -58,6 +58,7 @@ fun run(num: Int= 5, latter: Char ='x'){
 fun main(args: Array<String>) {  
     run(3)  
 }  
+
 fun run(num:Int= 5, latter: Char ='x'){  
     print("$num and $latter")  
 }  
@@ -72,6 +73,7 @@ __Kotlin Named Argument__
 fun main(args: Array<String>) {
     run(mText='a')
 }
+
 fun run(num:Int= 5, mText: Char ='x'){
     print("parameter in function definition $num and $mText")
 } 
