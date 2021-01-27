@@ -129,6 +129,42 @@ val add: (Int, Int) -> Int = {
     print(result)
 ```
 
+# Kotlin Higher Order Functions
+
+- High order function (Higher level function) is a function which accepts function as a parameter or returns a function or can do both. 
+- (i.e.) instead of passing Int, String, or other types as a parameter in a function we can pass a function as a parameter in other function.
+
+```ruby
+fun main(args: Array<String>) {
+    val functionMethod:(String,String) -> String = {org, portal->"$org develop $portal"}
+    functionMethod("android.org","android_pillars.com", functionMethod)
+}
+
+fun functionMethod(org: String,portal: String, fn: (String,String) -> String): Unit {
+    val result = fn(org,portal)
+    println(result)
+}
+```
+
+```ruby
+fun main(args: Array<String>) {
+
+    var list = (1..100).toList()
+
+    print(list.filter { element -> element % 2 == 0 })
+
+    print(list.filter { it % 2 == 0 })
+
+    print(list.filter { it.even() })
+
+    print(list.filter ( ::isEven ))
+}
+
+fun isEven(i: Int) = i % 2 == 0
+
+fun Int.even() = this % 2 == 0
+```
+
 # Exception Handling
 
 - The Exception Handling in Java is one of the powerful technique to handle the runtime errors so that normal flow of the application can be maintained.
