@@ -91,7 +91,7 @@ __Checked Exception__
 
 - Checked exception is checked at compile time. 
 - This exception type extends the Throwable class.
-- Example: IOException, SQLException etc
+- Example: IOException, SQLException, FileNotFoundException, ClassNotFoundException etc.
 
 __Unchecked Exception__
 
