@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-# Properties with Getters and Setters
+__Properties with Getters and Setters__
 
 __Example 1__
 
@@ -77,7 +77,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-# Primary and Secondary Constructors
+__Primary and Secondary Constructors__
 
 __Example 1__
 
@@ -132,7 +132,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-# Methods
+__Methods__
 
 ```ruby
 class Microphone(val name: String, val modelNo: Int) {
