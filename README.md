@@ -155,6 +155,8 @@ __Mutable Collection__
 MutableList<int>
 ```
 
+__Examples__
+
 ```ruby
 val array = arrayOf(2, 3, 4, 5)
  array.joinToString()
