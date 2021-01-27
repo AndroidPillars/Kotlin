@@ -249,6 +249,25 @@ fun main(args: Array<String>) {
 }
 ```
 
+# Use zip()
+
+- It takes two collections and then, well, puts them together in a zipper-like fashion.
+
+```ruby
+fun main(args: Array<String>) {
+
+    val list = listOf("Android", "Kotlin", "Flutter")
+    val constant = listOf(true, true, true)
+
+    val zipped : List<Pair<String, Boolean>> = list.zip(constant)
+    print(zipped)
+    
+    val mapping = list.zip(list.map { it.contains("t")})
+    print(mapping)
+
+}
+```
+
 # Exception Handling
 
 - The Exception Handling in Java is one of the powerful technique to handle the runtime errors so that normal flow of the application can be maintained.
