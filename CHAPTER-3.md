@@ -155,3 +155,44 @@ fun main(args: Array<String>) {
 
 }
 ```
+
+# Extension Functions
+
+- Kotlin extension function provides a facility to "add" methods to class without inheriting a class or using any type of design pattern. 
+- The created extension functions are used as a regular function inside that class.
+
+__Example 1__
+
+```ruby
+fun Int.isEven() = (this % 2 == 0)
+
+fun main(args: Array<String>) {
+
+    println(5.isEven())
+
+    val naturals = listOf(2, 5, 11, 3, 8, 2)
+    print(naturals.filter { it.isEven() })
+    
+}
+```
+
+__Example 2__
+
+```ruby
+class Student{  
+    fun isPassed(mark: Int): Boolean{  
+        return mark>40  
+    }  
+}  
+fun Student.isExcellent(mark: Int): Boolean{  
+    return mark > 90  
+}  
+fun main(args: Array<String>){  
+val student = Student()  
+val passingStatus = student.isPassed(55)  
+println("student passing status is $passingStatus")  
+  
+val excellentStatus = student.isExcellent(95)  
+println("student excellent status is $excellentStatus")  
+}  
+```
