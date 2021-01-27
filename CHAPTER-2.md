@@ -78,3 +78,42 @@ fun run(num:Int= 5, mText: Char ='x'){
     print("parameter in function definition $num and $mText")
 } 
 ```
+
+# Exception Handling
+
+- Exception handling is a technique which handles the runtime problems and maintains the flow of program execution.
+- In Kotlin, all exception classes are descendants of class Throwable.
+- Types -> try, catch, finally and throw
+
+```ruby
+throw MyException("this throws an exception")  
+```
+
+```ruby
+fun main(args: Array<String>) {
+    val input = getExternalInput()
+    print(input)
+}
+
+fun getExternalInput(): String{
+    throw IOException("Not able to read external input")
+}
+```
+
+```ruby
+fun main(args: Array<String>) {
+    val input = try {
+         getExternalInput()
+    } catch (e: IOException){
+        e.printStackTrace()
+        ""
+    } finally {
+        print("Finish processing")
+    }
+    print(input)
+}
+
+fun getExternalInput(): String{
+    throw IOException("Not able to read external input")
+}
+```
