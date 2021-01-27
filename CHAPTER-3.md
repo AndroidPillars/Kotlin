@@ -131,3 +131,27 @@ fun main(args: Array<String>) {
 
 }
 ```
+
+# Methods
+
+```ruby
+class Microphone(val name: String, val modelNo: Int) {
+
+    fun getBrand(){
+        print("Name: $name, ModelNo: $modelNo")
+    }
+
+    fun knowItsName() : Boolean = name.isNotBlank()
+
+}
+
+fun main(args: Array<String>) {
+
+    val mMicrophone = Microphone("Android", 123456)
+
+   if (mMicrophone.knowItsName()){
+       mMicrophone.getBrand()
+   }
+
+}
+```
