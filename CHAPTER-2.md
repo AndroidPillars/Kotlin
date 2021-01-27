@@ -93,17 +93,6 @@ __Checked Exception__
 - This exception type extends the Throwable class.
 - Example: IOException, SQLException, FileNotFoundException, ClassNotFoundException etc.
 
-__Unchecked Exception__
-
-- The classes which inherit RuntimeException are known as unchecked exceptions.
-- Unchecked exceptions are not checked at compile-time, but they are checked at runtime.
-- Example:  ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException etc.
-
-__Error__
-
-- Error is irrecoverable.
-- Example: OutOfMemoryError, VirtualMachineError, AssertionError etc.
-
 ```ruby
 throw MyException("this throws an exception")  
 ```
@@ -118,6 +107,12 @@ fun getExternalInput(): String{
     throw IOException("Not able to read external input")
 }
 ```
+
+__Unchecked Exception__
+
+- The classes which inherit RuntimeException are known as unchecked exceptions.
+- Unchecked exceptions are not checked at compile-time, but they are checked at runtime.
+- Example:  ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException etc.
 
 ```ruby
 fun main(args: Array<String>) {
@@ -136,3 +131,9 @@ fun getExternalInput(): String{
     throw IOException("Not able to read external input")
 }
 ```
+
+__Error__
+
+- Error is irrecoverable.
+- Example: OutOfMemoryError, VirtualMachineError, AssertionError etc.
+
