@@ -133,6 +133,35 @@ when(number) {
 } 
 ```
 
+__Kotlin for Expression__
+
+- The for loop in Kotlin iterates through anything that provides an iterator.
+
+```ruby
+for (i in 1..10){
+     print("$i ")
+ }
+```
+
+```ruby
+val languages = arrayOf("Android","Kotlin","Flutter")
+ for(lang in languages){
+     println(lang + ",")
+ }
+```
+
+```ruby
+for (i in 10 downTo 1){
+     print("$i ")
+ }
+```
+
+```ruby
+for (i in 10 downTo 1 step 2){
+     print("$i ")
+ }
+```
+
 # Kotlin Collections
 
 - Collections in Kotlin are used to store group of related objects in a single unit. 
