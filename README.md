@@ -132,3 +132,66 @@ when(number) {
     else -> println("invalid number")
 } 
 ```
+
+# Kotlin Collections
+
+- Collections in Kotlin are used to store group of related objects in a single unit. 
+- By using collection, we can store, retrieve manipulate and aggregate data.
+- Two Types -> Immutable Collection and Mutable Collection
+
+__Immutable Collection__
+
+- Immutable collection also called Collection supports read only functionalities.
+
+```ruby
+List<int>
+```
+
+__Mutable Collection__
+
+- Mutable collections supports both read and write functionalities. 
+
+```ruby
+MutableList<int>
+```
+
+```ruby
+val array = arrayOf(2, 3, 4, 5)
+ array.joinToString()
+```
+
+```ruby
+val array = intArrayOf(2, 3, 4, 5)
+ array.joinToString()
+```
+
+```ruby
+val array = listOf(2, 3, 4, 5)
+ array.joinToString()
+```
+
+```ruby
+val array = mutableListOf(2, 3, 4, 5)
+ array[0] = 1
+ array
+```
+
+```ruby
+val array = setOf(2, 2, 3, 4, 5)
+ array
+```
+
+```ruby
+val array = mutableSetOf(2, 2, 3, 4, 5)
+ array
+```
+
+```ruby
+val map = mapOf(Pair(1, "Android"), Pair(2, "Kotlin"))
+ map
+```
+
+```ruby
+val map = mutableMapOf(1 to "Android", 2 to "Kotlin")
+ map
+```
