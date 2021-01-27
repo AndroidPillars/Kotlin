@@ -133,7 +133,7 @@ when(number) {
 } 
 ```
 
-__Kotlin for Expression__
+__Kotlin for Loop Expression__
 
 - The for loop in Kotlin iterates through anything that provides an iterator.
 
@@ -160,6 +160,32 @@ for (i in 10 downTo 1){
 for (i in 10 downTo 1 step 2){
      print("$i ")
  }
+```
+
+__Kotlin while Loop Expression__
+
+- The while loop is used to iterate a part of program several time.
+
+```ruby
+var i = 1
+ while (i<=10){
+     println("$i ")
+     i++
+ }
+```
+
+__Kotlin do-while Loop__
+
+- The do-while loop is similar to while loop except one key difference. 
+- A do-while loop first execute the body of do block after that it check the condition of while.
+
+```ruby
+var i = 1
+ do {
+     println("$i ")
+     i++
+ }
+ while (i<=20)
 ```
 
 # Kotlin Collections
