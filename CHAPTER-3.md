@@ -383,3 +383,45 @@ fun main(args: Array<String>) {
     circle.sayShape()
 }
 ```
+
+# Interfaces
+
+- An Interface can be considered as a fully abstract class. 
+- It means by default all functions and properties of an interface are abstract.
+- An interface in Kotlin is a blueprint of a class and is a mechanism to achieve abstraction.
+- It is used to achieve abstraction and multiple inheritance in Java.
+- Interfaces can have abstract methods and variables.
+
+```ruby
+interface A {
+    fun sayHelloByA()
+    fun sayByeByA() {
+        println("Bye from A....")
+    }
+}
+
+interface B {
+    fun sayHelloByB()
+    fun sayByeByB() {
+        println("Bye from B....")
+    }
+}
+
+class MainClass : A, B {
+    override fun sayHelloByA() {
+        println("Hello from overridden A....")
+    }
+
+    override fun sayHelloByB() {
+        println("Hello from overridden B....")
+    }
+}
+
+fun main(args: Array<String>) {
+    val mainClass = MainClass()
+    mainClass.sayHelloByA()
+    mainClass.sayHelloByB()
+    mainClass.sayByeByA()
+    mainClass.sayByeByB()
+}
+```
