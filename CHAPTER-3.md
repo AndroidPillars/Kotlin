@@ -201,6 +201,18 @@ println("student excellent status is $excellentStatus")
 
 # Data Classes
 
+- We often create classes to hold some data in it. 
+- In such classes, some standard functions are often derivable from the data. 
+- In Kotlin, this type of class is known as data class and is marked as data.
+- The compiler automatically derives the following functions : equals(), hashCode(), toString(), copy()
+
+__Rules to create Data classes__
+
+- The primary constructor needs to have at least one parameter.
+- All primary constructor parameters need to be marked as val or var.
+- Data classes cannot be abstract, open, sealed or inner.
+- Data classes may only implement interfaces.
+
 ```ruby
 // Generates hashCode(), equals(), toString(), copy(), destructuring operator
 data class Microphone(var name: String, var modelNo: Int) {
