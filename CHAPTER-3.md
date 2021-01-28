@@ -201,9 +201,15 @@ println("student excellent status is $excellentStatus")
 
 # Data Classes
 
-- We often create classes to hold some data in it. 
-- In such classes, some standard functions are often derivable from the data. 
-- In Kotlin, this type of class is known as data class and is marked as data.
+__Existing in Java__
+
+- While building any application, we often need to create classes whose primary purpose is to hold data/state. 
+- These classes generally contain the same old boilerplate code in the form of getters, setters, equals(), hashcode() and toString() methods.
+
+__In Kotlin__
+
+- Kotlin has a better solution for classes that are used to hold data/state and it’s called a Data Class. 
+- A Data Class is like a regular class but with some additional functionalities.
 - The compiler automatically derives the following functions : equals(), hashCode(), toString(), copy()
 
 __Rules to create Data classes__
@@ -225,23 +231,28 @@ fun main(args: Array<String>) {
     val mMicrophoneOne = Microphone("Android", 123456)
 
     // to String
-    print(mMicrophone)
+    println(mMicrophone)
+
+    // equals
+    println(mMicrophone == mMicrophoneOne)
 
     // Referential equality
-    print(mMicrophone === mMicrophoneOne)
-
-    // Structural equality
-    print(mMicrophone == mMicrophoneOne)
+    println(mMicrophone.name === mMicrophoneOne.name)
 
     // Copy
-    val mValue = mMicrophone.copy(modelNo = 65)
-    print(mValue)
-
-    // Destructuring Operator
-    mMicrophone.component1()
+    val mValue1 = mMicrophone
+    println(mValue1)
+    val mValue2 = mMicrophone.copy(modelNo = 65)
+    println(mValue2)
+    
+    // Destructuring declaration
     val (name, number) = mMicrophone
-    print("$name, $number")
+    println("$name, $number")
 
+    // Components
+    println("Component1 ${mMicrophone.component1()}")
+    println("Component2 ${mMicrophone.component2()}")
+    
 }
 ```
 
