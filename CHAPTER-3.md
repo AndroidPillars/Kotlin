@@ -301,3 +301,36 @@ fun main(args: Array<String>) {
     Gender.MALE.doGender()
 }
 ```
+
+# Inheritance
+
+- Inheritance is one of the key concepts of Object Oriented Programming (OOP). 
+- Inheritance enables re-usability. 
+- It allows a class to inherit features (properties and methods) from another class.
+- By default, all the classes in Kotlin are final (non-inheritable).
+- To allow a class to be inherited by others, you must mark it with the open modifier.
+
+```ruby
+open class Shape(val name: String) {
+
+    open fun area() = 0.0
+}
+
+
+class Circle(name: String, val radius: Double) : Shape(name) {
+
+    override fun area() = Math.PI* radius.pow(2.0)
+}
+
+fun main(args: Array<String>) {
+
+    val mSmallCircle = Circle("Large Circe", 14.0)
+
+    println(mSmallCircle.name)
+    println(mSmallCircle.radius)
+    println(mSmallCircle.area())
+
+}
+```
+
+
