@@ -244,3 +244,49 @@ fun main(args: Array<String>) {
 
 }
 ```
+
+# Enums
+
+- The Enum in Kotlin is a data type which contains a fixed set of constants.
+- It can be used for days of the week , directions, season , colors etc. 
+- We will use enum constants in capital letters.
+- Enums are used to create our own data type like classes. 
+- The enum data type (also known as Enumerated Data Type) is used to define an enum in Kotlin.
+
+```ruby
+enum class Direction(val degree: Double){
+    NORTH(0.0), EAST(90.0), SOUTH(180.0), WEST(270.0)
+}
+
+enum class Days{
+    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+}
+
+interface DoGender{
+    fun doGender()
+}
+
+enum class Gender(val mResult: String): DoGender{
+    MALE("Male"){
+        override fun doGender() {
+            print("Male Child")
+        }
+    }
+}
+
+fun main(args: Array<String>) {
+    val mDays = Days.MONDAY
+
+    val mWorkingDays = when(mDays){
+        Days.MONDAY, Days.TUESDAY -> "Working Day"
+        Days.WEDNESDAY, Days.THURSDAY, Days.FRIDAY -> "Working Day"
+        Days.SATURDAY, Days.SUNDAY -> "Holiday"
+    }
+
+    print(mWorkingDays)
+
+    print(Direction.EAST.degree)
+
+    print(Gender.MALE.doGender())
+}
+```
