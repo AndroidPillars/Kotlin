@@ -183,10 +183,12 @@ class Student{
     fun isPassed(mark: Int): Boolean{  
         return mark>40  
     }  
-}  
+}
+
 fun Student.isExcellent(mark: Int): Boolean{  
     return mark > 90  
 }  
+
 fun main(args: Array<String>){  
 val student = Student()  
 val passingStatus = student.isPassed(55)  
@@ -195,4 +197,38 @@ println("student passing status is $passingStatus")
 val excellentStatus = student.isExcellent(95)  
 println("student excellent status is $excellentStatus")  
 }  
+```
+
+# Data Classes
+
+```ruby
+// Generates hashCode(), equals(), toString(), copy(), destructuring operator
+data class Microphone(var name: String, var modelNo: Int) {
+
+}
+
+fun main(args: Array<String>) {
+
+    val mMicrophone = Microphone("Android", 123456)
+    val mMicrophoneOne = Microphone("Android", 123456)
+
+    // to String
+    print(mMicrophone)
+
+    // Referential equality
+    print(mMicrophone === mMicrophoneOne)
+
+    // Structural equality
+    print(mMicrophone == mMicrophoneOne)
+
+    // Copy
+    val mValue = mMicrophone.copy(modelNo = 65)
+    print(mValue)
+
+    // Destructuring Operator
+    mMicrophone.component1()
+    val (name, number) = mMicrophone
+    print("$name, $number")
+
+}
 ```
