@@ -258,10 +258,11 @@ fun main(args: Array<String>) {
 
 # Enums
 
-- The Enum in Kotlin is a data type which contains a fixed set of constants.
-- It can be used for days of the week , directions, season , colors etc. 
-- We will use enum constants in capital letters.
-- Enums are used to create our own data type like classes. 
+- While developing an application, there may arise a situation where we want a variable to have a value out of a given set of allowed values only.
+- for example, if we have a variable DressSize, then it should have following values: small, medium and large.
+- In Kotlin, and in Java too, Enums help us achieve this.
+- In Kotlin we can create an enum class with the help of enum keyword. 
+- Kotlin enums can have properties, functions, can implement interfaces, etc.
 - The enum data type (also known as Enumerated Data Type) is used to define an enum in Kotlin.
 
 ```ruby
