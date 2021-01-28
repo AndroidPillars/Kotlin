@@ -333,4 +333,53 @@ fun main(args: Array<String>) {
 }
 ```
 
+# Abstract Classes
 
+- A class which is declared with the abstract keyword is known as an abstract class in Java.
+- It can have abstract and non-abstract methods (method with the body).
+- Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+- There are two ways to achieve abstraction in java
+    1.Abstract class (0 to 100%)
+    2.Interface (100%)
+    
+__Points to get Remember__
+
+- If a class has an abstract property or abstract function, then class must be marked as abstract.
+- An abstract class cannot be instantiated. It means we cannot create object of an abstract class.
+- There is no need to add open keyword in abstract classes as they are meant to be inherited and hence by default open.
+- An abstract can have both abstract and non-abstract (normally defined) functions and properties.
+- An abstract function does not have body.
+- In abstract class, by default all members are non-abstract. We need to add abstract keyword to make them abstract.
+
+```ruby
+abstract class Shape() {
+
+    abstract var sides: Int
+    abstract fun area(): Double
+
+    fun sayShape() {
+        println("It is a shape...")
+    }
+}
+
+class Square(name: String, val radius: Double) : Shape() {
+    override var sides: Int = 4
+    override fun area() = Math.PI * radius.pow(2.0)
+}
+
+class Circle(name: String, val radius: Double) : Shape() {
+    override var sides: Int = 0
+    override fun area() = Math.PI * radius.pow(2.0)
+}
+
+fun main(args: Array<String>) {
+    val square = Square("Square", 10.0)
+    val circle = Circle("Circle", 100.0)
+    println("Side of square: ${square.sides}")
+    println("Side of Circle: ${circle.sides}")
+    println(square.area())
+    println(circle.area())
+    square.sayShape()
+    circle.sayShape()
+}
+```
