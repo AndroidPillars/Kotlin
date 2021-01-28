@@ -265,12 +265,12 @@ fun main(args: Array<String>) {
 - The enum data type (also known as Enumerated Data Type) is used to define an enum in Kotlin.
 
 ```ruby
-enum class Direction(val degree: Double){
-    NORTH(0.0), EAST(90.0), SOUTH(180.0), WEST(270.0)
-}
-
 enum class Days{
     SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+}
+
+enum class Direction(val degree: Double){
+    NORTH(0.0), EAST(90.0), SOUTH(180.0), WEST(270.0)
 }
 
 interface DoGender{
@@ -286,18 +286,17 @@ enum class Gender(val mResult: String): DoGender{
 }
 
 fun main(args: Array<String>) {
-    val mDays = Days.MONDAY
 
-    val mWorkingDays = when(mDays){
+    val mWorkingDays = when(Days.MONDAY){
         Days.MONDAY, Days.TUESDAY -> "Working Day"
         Days.WEDNESDAY, Days.THURSDAY, Days.FRIDAY -> "Working Day"
         Days.SATURDAY, Days.SUNDAY -> "Holiday"
     }
 
-    print(mWorkingDays)
+    println(mWorkingDays)
 
-    print(Direction.EAST.degree)
+    println(Direction.EAST.degree)
 
-    print(Gender.MALE.doGender())
+    Gender.MALE.doGender()
 }
 ```
