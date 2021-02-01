@@ -176,6 +176,7 @@ class Student{
         return marks > 40
     }
 }
+
 fun main(args: Array<String>) {
 
     var student = Student()
