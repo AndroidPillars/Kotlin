@@ -189,7 +189,7 @@ __Example 2__
 ```ruby
 class Student{  
     fun isPassed(mark: Int): Boolean{  
-        return mark>40  
+        return mark > 40  
     }  
 }
 
