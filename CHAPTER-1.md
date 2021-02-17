@@ -1,6 +1,8 @@
 
 # Kotlin
 
+## What is Kotlin?
+
 - Kotlin is an open-source statically typed programming language. 
 - It runs on JVM and can be used anywhere Java is used today. 
 - It can be used to develop Android apps, server-side apps and much more.
@@ -8,17 +10,17 @@
 - The project was started in 2010 to develop the language and officially, first released in February 2016. 
 - Kotlin was developed under the Apache 2.0 license.
 
-# Installation
+## Installation
 
 - Install the Java JDK using this link https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
 - Install the Android Studio using this link https://developer.android.com/studio/install
 
-# Kotlin Editor
+## Kotlin Editor
 
 - Kotlin REPL (Read Evaluate Print Loop) -> It's like a console that allows you to write expressions.
 - To Enable -> Tools -> Kotlin -> Kotlin REPL
 
-# Kotlin Data Type
+## Kotlin Data Type
 
 - Data type refers to type and size of data associated with variables and functions.
 
@@ -41,7 +43,7 @@ val age: Int = 10
 - var (Mutable variable) -> We can change the value of variable declared using var keyword later in the program.
 - val (Immutable variable) -> We cannot change the value of variable which is declared using val keyword.
 
-# Null Safety
+## Null Safety
 
 - Kotlin's type system is aimed at eliminating the danger of null references from code.
 - Types -> Nullable Types and Non-Nullable Types
@@ -97,7 +99,7 @@ var nameLength:  Int = name ?.length ?: -1
 var companyLength:  Int = company ?.length ?:  -1  
 ```
 
-# Kotlin Operators
+## Kotlin Operators
 
 __Kotlin if Expression__
 
@@ -189,7 +191,7 @@ var i = 1
  while (i<=20)
 ```
 
-# Kotlin Collections
+## Kotlin Collections
 
 - Collections in Kotlin are used to store group of related objects in a single unit. 
 - By using collection, we can store, retrieve manipulate and aggregate data.
